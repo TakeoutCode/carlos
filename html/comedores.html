@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/comedores.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <a href="../index.html" class="menu__logo">Muebleteca</a>
+        <ul class="menu__options">
+          <li class="menu__search">
+            <input type="text" />
+            <img src="../assets/icons/search.svg" alt="" />
+          </li>
+          <li class="menu__option">
+            <a href="./comedores.html">Comedores</a>
+          </li>
+          <li class="menu__option">
+            <a href="./sillas.html">Sillas</a>
+          </li>
+          <li class="menu__option">
+            <a href="./escritorios.html">Escritorios</a>
+          </li>
+          <li class="menu__option">
+            <a href="./salas.html">Salas</a>
+          </li>
+          <li class="menu__option">
+            <a href="./recamaras.html">Recamaras</a>
+          </li>
+          <li class="menu__option">
+            <a href="./tocadores.html">Tocadores</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="screen">
+      <aside class="menu__lateral">
+        <p class="filters__title">FILTROS</p>
+        <p class="filters__subtitle">Color</p>
+        <label for="Amarillo" class="filter__option">
+          <input id="Amarillo" type="checkbox" />
+          <p>Amarillo</p>
+        </label>
+        <label for="Blanco" class="filter__option">
+          <input id="Blanco" type="checkbox" />
+          <p>Blanco</p>
+        </label>
+        <label for="Café" class="filter__option">
+          <input id="Café" type="checkbox" />
+          <p>Café</p>
+        </label>
+        <label for="Caféobscuro" class="filter__option">
+          <input id="Caféobscuro" type="checkbox" />
+          <p>Café obscuro</p>
+        </label>
+        <label for="Gris" class="filter__option">
+          <input id="Gris" type="checkbox" />
+          <p>Gris</p>
+        </label>
+        <label for="Negro" class="filter__option">
+          <input id="Negro" type="checkbox" />
+          <p>Negro</p>
+        </label>
+        <label for="Verde" class="filter__option">
+          <input id="Verde" type="checkbox" />
+          <p>Verde</p>
+        </label>
+
+        <p class="filters__subtitle">Material</p>
+        <label for="Plastico" class="filter__option">
+          <input id="Plastico" type="checkbox" />
+          <p>Plastico</p>
+        </label>
+        <label for="Madera" class="filter__option">
+          <input id="Madera" type="checkbox" />
+          <p>Madera</p>
+        </label>
+        <label for="Metal" class="filter__option">
+          <input id="Metal" type="checkbox" />
+          <p>Metal</p>
+        </label>
+        <label for="Tela" class="filter__option">
+          <input id="Tela" type="checkbox" />
+          <p>Tela</p>
+        </label>
+        <label for="Bambú" class="filter__option">
+          <input id="Bambú" type="checkbox" />
+          <p>Bambú</p>
+        </label>
+        <label for="Ratán" class="filter__option">
+          <input id="Ratán" type="checkbox" />
+          <p>Ratán</p>
+        </label>
+        <label for="Vidrio" class="filter__option">
+          <input id="Vidrio" type="checkbox" />
+          <p>Vidrio</p>
+        </label>
+
+        <p class="filters__subtitle">Tamaño</p>
+        <p class="form__subtitle">Ancho</p>
+        <div class="form__control">
+          <div>
+            <p>cm</p>
+            <input type="number" />
+          </div>
+
+          <div>
+            <p>cm</p>
+            <input type="number" />
+          </div>
+        </div>
+        <p class="form__subtitle">Alto</p>
+        <div class="form__control">
+          <div>
+            <p>cm</p>
+            <input type="number" />
+          </div>
+
+          <div>
+            <p>cm</p>
+            <input type="number" />
+          </div>
+        </div>
+        <p class="form__subtitle">Profundidad</p>
+        <div class="form__control">
+          <div>
+            <p>cm</p>
+            <input type="number" />
+          </div>
+
+          <div>
+            <p>cm</p>
+            <input type="number" />
+          </div>
+        </div>
+        <p class="filters__subtitle filters__subtitle--precio">
+          Filtrar precio
+        </p>
+        <div class="form__control">
+          <div>
+            <p>$</p>
+            <input type="number" />
+          </div>
+
+          <div>
+            <p>$</p>
+            <input type="number" />
+          </div>
+        </div>
+        <button class="form__button">Filtrar</button>
+      </aside>
+      <main class="productos">
+        <section id="productos" class="lista-productos"></section>
+        <section id="descripciones"></section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__list footer__list--contacto">
+        <h4 class="footer__title">CONTACTO</h4>
+        <ul>
+          <li>
+            <p>Dentro del área metropolitana:</p>
+            <p>55 5899 7094</p>
+          </li>
+          <li>
+            <p>Del interior de la República:</p>
+            <p>230 569 4668</p>
+          </li>
+          <li>
+            <p>infomuebletecacentro@muebleteca.com.mx</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__list footer__list--ayuda">
+        <h4 class="footer__title">Ayuda</h4>
+        <ul>
+          <li>
+            <p>Aviso de privacidad</p>
+          </li>
+          <li>
+            <p>Compra segura</p>
+          </li>
+          <li>
+            <p>Preguntas frecuentes</p>
+          </li>
+          <li>
+            <p>Términos de promociones</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__list footer__list--comunidad">
+        <h4 class="footer__title">Comunidad</h4>
+        <ul>
+          <li>
+            <img src="../assets/icons/facebook-icon.svg" alt="" />
+            <p>Facebook</p>
+          </li>
+          <li>
+            <img src="../assets/icons/instagram-icon.svg" alt="" />
+            <p>Instagram</p>
+          </li>
+          <li>
+            <img src="../assets/icons/youtube-icon.svg" alt="" />
+            <p>Youtube</p>
+          </li>
+          <li>
+            <img src="../assets/icons/twitter-icon.svg" alt="" />
+            <p>Twitter</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../js/comedores.js"></script>
+  </body>
+</html>
