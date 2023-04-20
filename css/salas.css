@@ -45,7 +45,7 @@ li {
   width: 100px;
 }
 .menu__options {
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
 }
@@ -56,6 +56,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.menu__option--login {
+  width: 120px;
 }
 .menu__options .menu__option:hover {
   background-color: rgb(168, 168, 168);
